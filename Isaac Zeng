@@ -12,3 +12,6 @@ def encode(password):
         string_encoded += str(encoded_list[i])
     print(encoded_list)
     print(string_encoded)
+
+if __name__ == "__main__"":
+    
