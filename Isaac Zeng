@@ -1,0 +1,14 @@
+def encode(password):
+    password = list(password)
+    print(password)
+    encoded_list = []
+    string_encoded = ''
+    for i in range(len(password)):
+        encoded = int(password[int(i)]) + 3
+        encoded_list.append(encoded)
+        if encoded_list[i] >= 10:
+            encoded_list[i] -= 10
+    for i in range(len(encoded_list)):
+        string_encoded += str(encoded_list[i])
+    print(encoded_list)
+    print(string_encoded)
